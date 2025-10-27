@@ -6,8 +6,16 @@ public class Main {
 
         Moped slowRide = new Moped();
         slowRide.setColor("Red");
-        slowRide.setFuelCapacity(5);
+        slowRide.setFuelCapacity(50);
         slowRide.setNumberOfPassangers(1);
-        slowRide.setCargoCapacity(5);
+        slowRide.setCargoCapacity(15);
+
+        Car familyCar = new Car();
+        familyCar.setColor("Silver");
+        familyCar.setFuelCapacity(500);
+        familyCar.setNumberOfPassangers(8);
+        familyCar.setCargoCapacity(500);
+
+
     }
 }
