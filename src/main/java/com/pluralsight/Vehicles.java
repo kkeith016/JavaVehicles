@@ -14,12 +14,12 @@ public class Vehicles {
         this.color = color;
     }
 
-    public int numberOfPassangers() {
+    public int getNumberOfPassangers() {
         return numberOfPassangers;
     }
 
-    public void numberOfPassangers(int numberOfSeats) {
-        this.numberOfPassangers = numberOfSeats;
+    public void setNumberOfPassangers(int numberOfPassangers) {
+        this.numberOfPassangers = numberOfPassangers;
     }
 
     public int getCargoCapacity() {
