@@ -6,19 +6,19 @@ public class Main {
 
         Moped slowRide = new Moped();
         slowRide.setColor("Red");
-        slowRide.setFuelCapacity(50);
+        slowRide.setFuelCapacity(10);
         slowRide.setNumberOfPassangers(1);
         slowRide.setCargoCapacity(15);
 
         Car familyCar = new Car();
         familyCar.setColor("Silver");
-        familyCar.setFuelCapacity(500);
+        familyCar.setFuelCapacity(25);
         familyCar.setNumberOfPassangers(8);
         familyCar.setCargoCapacity(500);
 
         SemiTruck bigRig = new SemiTruck();
         bigRig.setColor("Red");
-        bigRig.setFuelCapacity(1000);
+        bigRig.setFuelCapacity(500);
         bigRig.setNumberOfPassangers(4);
         bigRig.setCargoCapacity(10000);
 
@@ -29,11 +29,15 @@ public class Main {
         airSkimmer.setCargoCapacity(100000);
 
         //Printing
-
-        System.out.println("Moped: " + slowRide);
-        System.out.println("Car: " + familyCar);
-        System.out.println("SemiTruck: " + bigRig);
-        System.out.println("Hovercraft: " + airSkimmer);
+        System.out.println();
+        System.out.println("=== Moped ===");
+        System.out.println(slowRide);
+        System.out.println("=== Car ===");
+        System.out.println(familyCar);
+        System.out.println("=== SemiTruck ===");
+        System.out.println(bigRig);
+        System.out.println("=== Hovercraft ===");
+        System.out.println(airSkimmer);
 
         System.out.println("The moped's fuel capacity is " + slowRide.getFuelCapacity() + " Gallons.");
     }
