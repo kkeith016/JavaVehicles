@@ -1,10 +1,19 @@
 package com.pluralsight;
 
-public class Vehicles {
+public class Vehicle {
     private String color;
-    private int numberOfPassangers;
+    private int numberOfPassengers;
     private int cargoCapacity;
     private int fuelCapacity;
+
+
+    public Vehicle(String color, int numberOfPassengers, int cargoCapacity, int fuelCapacity) {
+        this.color = color;
+        this.numberOfPassengers = numberOfPassengers;
+        this.cargoCapacity = cargoCapacity;
+        this.fuelCapacity = fuelCapacity;
+    }
+
 
     public String getColor() {
         return color;
@@ -14,12 +23,12 @@ public class Vehicles {
         this.color = color;
     }
 
-    public int getNumberOfPassangers() {
-        return numberOfPassangers;
+    public int getNumberOfPassengers() {
+        return numberOfPassengers;
     }
 
-    public void setNumberOfPassangers(int numberOfPassangers) {
-        this.numberOfPassangers = numberOfPassangers;
+    public void setNumberOfPassengers(int numberOfPassengers) {
+        this.numberOfPassengers = numberOfPassengers;
     }
 
     public int getCargoCapacity() {
@@ -27,7 +36,7 @@ public class Vehicles {
     }
 
     public void setCargoCapacity(int cargoCapacity) {
-        cargoCapacity = cargoCapacity;
+        this.cargoCapacity = cargoCapacity;
     }
 
     public int getFuelCapacity() {
@@ -38,8 +47,10 @@ public class Vehicles {
         this.fuelCapacity = fuelCapacity;
     }
 
+    @Override
     public String toString() {
-        return String.format("Color: %s%nPassengers: %d%nCargo Capacity: %d%nFuel Capacity: %d%n",
-                color, numberOfPassangers, cargoCapacity, fuelCapacity);
+        return String.format(
+                "Color: %s%nPassengers: %d%nCargo Capacity: %d%nFuel Capacity: %d%n",
+                color, numberOfPassengers, cargoCapacity, fuelCapacity);
     }
 }
