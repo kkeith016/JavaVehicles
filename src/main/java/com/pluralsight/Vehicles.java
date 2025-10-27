@@ -1,13 +1,13 @@
 package com.pluralsight;
 
-public class Vehicle {
+public class Vehicles {
     private String color;
     private int numberOfPassengers;
     private int cargoCapacity;
     private int fuelCapacity;
 
 
-    public Vehicle(String color, int numberOfPassengers, int cargoCapacity, int fuelCapacity) {
+    public Vehicles(String color, int numberOfPassengers, int cargoCapacity, int fuelCapacity) {
         this.color = color;
         this.numberOfPassengers = numberOfPassengers;
         this.cargoCapacity = cargoCapacity;
