@@ -34,5 +34,7 @@ public class Main {
         System.out.println("Car: " + familyCar);
         System.out.println("SemiTruck: " + bigRig);
         System.out.println("Hovercraft: " + airSkimmer);
+
+        System.out.println("The moped's fuel capacity is " + slowRide.getFuelCapacity() + " Gallons.");
     }
 }

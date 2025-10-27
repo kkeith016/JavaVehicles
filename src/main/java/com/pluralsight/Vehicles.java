@@ -39,7 +39,7 @@ public class Vehicles {
     }
 
     public String toString() {
-        return String.format("color=%s, passengers=%d, cargo=%d, fuel=%d",
+        return String.format("Color: %s%nPassengers: %d%nCargo Capacity: %d%nFuel Capacity: %d%n",
                 color, numberOfPassangers, cargoCapacity, fuelCapacity);
     }
 }
