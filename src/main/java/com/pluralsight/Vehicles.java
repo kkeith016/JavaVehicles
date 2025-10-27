@@ -1,0 +1,45 @@
+package com.pluralsight;
+
+public class Vehicles {
+    private String color;
+    private int numberOfPassangers;
+    private int cargoCapacity;
+    private int fuelCapacity;
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public int numberOfPassangers() {
+        return numberOfPassangers;
+    }
+
+    public void numberOfPassangers(int numberOfSeats) {
+        this.numberOfPassangers = numberOfSeats;
+    }
+
+    public int getCargoCapacity() {
+        return cargoCapacity;
+    }
+
+    public void setCargoCapacity(int cargoCapacity) {
+        cargoCapacity = cargoCapacity;
+    }
+
+    public int getFuelCapacity() {
+        return fuelCapacity;
+    }
+
+    public void setFuelCapacity(int fuelCapacity) {
+        this.fuelCapacity = fuelCapacity;
+    }
+
+    public String toString() {
+        return String.format("color=%s, passengers=%d, cargo=%d, fuel=%d",
+                color, numberOfPassangers, cargoCapacity, fuelCapacity);
+    }
+}
